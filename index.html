@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephanie Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body>
+    <!-- ===== NAVBAR ===== -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000"><span>Stephanie</span></div>
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact" class="contact-btn">Contact</a>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HOME SECTION ===== -->
+    <section id="home">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="581967433_1535598267469033_3337506986810084891_n (1).jpg" alt="Stephanie Rose">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Stephanie</span></h1>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                    A dedicated BSIT student seeking opportunities to apply my knowledge in programming, database management, web development, and IT support.
+                </p>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <!-- Download CV -->
+                    <a href="Stephanie_CV.pdf" download>
+                        <button>Download CV</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about">
+        <h2 data-aos="fade-up">About Me</h2>
+        <p data-aos="fade-up" data-aos-delay="200">
+            Aspiring IT professional and BSIT student seeking internship opportunities in web development, database management, or IT support. Experienced in building responsive websites, creating and managing databases, and troubleshooting software and hardware issues. Highly motivated, fast learner, and committed to contributing to team success while enhancing technical skills.
+        </p>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills">
+        <h2 data-aos="fade-up">Skills</h2>
+        <ul data-aos="fade-up" data-aos-delay="200">
+            <li>Programming: HTML, CSS, JavaScript, PHP, Python (Basic)</li>
+            <li>Database: MySQL, SQL Queries, CRUD Operations</li>
+            <li>Web Development: Responsive UI, Basic Backend</li>
+            <li>Networking: Basic network setup, IP configuration</li>
+            <li>Tools: XAMPP, VS Code, GitHub, MS Office</li>
+        </ul>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects">
+        <h2 data-aos="fade-up">Projects</h2>
+        <p data-aos="fade-up" data-aos-delay="200">
+            Student Information System (PHP & MySQL)<br>
+            Developed a basic CRUD application for storing and managing student records.
+        </p>
+        <p data-aos="fade-up" data-aos-delay="300">
+            Personal Portfolio Website<br>
+            Built a responsive website using HTML, CSS, and JavaScript to showcase skills and projects.
+        </p>
+        <p data-aos="fade-up" data-aos-delay="400">
+            Login & Registration System<br>
+            Created a simple authentication system using PHP and MySQL.
+        </p>
+        <p data-aos="fade-up" data-aos-delay="500">
+            Book Management System<br>
+            Using Laravel and MySQL to manage books and categories with a dashboard, CRUD operations, and relationships.
+        </p>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-links">
+            <a href="https://github.com/StephRiego" target="_blank" class="github"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/stephanie-ampoyos-202226399" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:ampoyosstephanie@gmail.com" class="email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </section>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+
+        function hamburg() {
+            document.querySelector(".dropdown").style.transform = "translateY(0px)";
+        }
+
+        function cancel() {
+            document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
